@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  minio:
+    command: server /data
+    environment:
+      MINIO_ACCESS_KEY: secret-access-key
+      MINIO_SECRET_KEY: secret-key
+    extra_hosts:
+      - localhost:host-gateway
+    image: minio/minio:latest
+    ports:
+      - "9000:9000"
+    volumes:
+      - minio:/data
+
+volumes:
+  minio: null

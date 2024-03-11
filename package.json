@@ -1,0 +1,10 @@
+{
+  "name": "xk6-minio",
+  "version": "0.0.1",
+  "typings": "typings.d.ts",
+  "author": "Alexandru Ifrim <alexandru.ifrim-ext@sixense-group.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "k6": "*"
+  }
+}
